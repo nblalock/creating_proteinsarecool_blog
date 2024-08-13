@@ -17,7 +17,6 @@ I decided to create a blog to document thoughts from literature related to Machi
 4. Type the following command to install Visual Studio Code:
    ```bash
    winget install Microsoft.VisualStudioCode
-   '''
 5. Press enter to install
 
 ### Step 2:
