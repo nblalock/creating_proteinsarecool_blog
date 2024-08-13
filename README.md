@@ -32,5 +32,12 @@ I decided to create a blog to document thoughts from literature related to Machi
 2. Click on "repositories"
 3. Click on New to create a repository.
 4. Give the repository a name, description, and include a README file. The other settings depend on various things I am not an expert in so I would google about what license is best for what you want to do. I chose an MIT license (https://fossa.com/blog/open-source-licenses-101-mit-license/)
-5. 
+
+### Step 4: Setup files for maintaining website on your local machine
+1. Open **Command Prompt** from the taskbar
+2. Navigate to your desktop to make it easy to see your files
+   ```bash
+   cd Desktop
+   ```
+3.) 
 
