@@ -19,6 +19,7 @@ I decided to create a blog to document thoughts from literature related to Machi
    winget install Microsoft.VisualStudioCode
    ```
 6. Press enter to install
+*There are many text editors out there that would also work. I like Sublime the best, but I also have only used Sublime before...
 
 ### Step 2:
 
