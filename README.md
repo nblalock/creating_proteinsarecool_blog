@@ -21,5 +21,12 @@ I decided to create a blog to document thoughts from literature related to Machi
 6. Press enter to install
 *There are many text editors out there that would also work. I like Sublime the best, but I also have only used Sublime before...
 
-### Step 2:
+### Step 2: Install Git on Windows machine
+1. Type the following command to install Git:
+   ```bash
+   winget install --id Git.Git -e --source winget
+   ```
+
+### Step 3: Create repository on Github to maintain website
+1. 
 
