@@ -16,7 +16,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 3. Open **Command Prompt** from the taskbar.
 4. Type the following command to install Visual Studio Code:
    ```bash
-   winget install Microsoft.VisualStudioCode
+   winget install Microsoft.VisualStudioCode```
 6. Press enter to install
 
 ### Step 2:
