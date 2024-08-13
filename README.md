@@ -15,8 +15,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 2. Right-click on **Command Prompt** and select "Pin to taskbar" for easy future access at the bottom of your desktop screen.
 3. Open **Command Prompt** from the taskbar.
 4. Type the following command to install Visual Studio Code:
-   ```bash
-   winget install Microsoft.VisualStudioCode
+   ```bash winget install Microsoft.VisualStudioCode
 5. Press enter to install
 
 ### Step 2:
