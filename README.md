@@ -87,12 +87,16 @@ I decided to create a blog to document thoughts from literature related to Machi
      ```bash
     notepad C:"\Users\YourUsername\.ssh\config"
     ```
+     - You may need to press okay about an error. Continue with notepad to make sure the configuration to use your ssh and key to clone your github repository
    
     # Use the new key for GitHub
+    ```
     Host github.com
     HostName github.com
     User username@wisc.edu
-    IdentityFile C:\Users\YourUsername\.ssh\id_ed25519
+    IdentityFile C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
+
+  1. 
 
 
