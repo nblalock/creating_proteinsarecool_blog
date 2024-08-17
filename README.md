@@ -55,7 +55,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 ### Step 4b: Set up ssh to access Github repository
 1. Generate new key
     ```bash
-    ssh-keygen -t ed25519 -C "[your_email@example.com]" -f "/Users/nathanielblalock/.ssh/id_ed25519"
+    ssh-keygen -t ed25519 -C "username@wisc.edu" -f "~/.ssh/id_ed25519"
     ```
   
 2. Make sure SSH is running: 
@@ -70,7 +70,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 4. Copy the new SSH public key to your clipboard: 
     ```bash
-    pbcopy < ~/.ssh/id_ed25519.pub
+    clip < ~/.ssh/id_ed25519.pub
     ```
 
 5. Go to GitHub and navigate to Settings > SSH and GPG keys.
@@ -80,7 +80,10 @@ I decided to create a blog to document thoughts from literature related to Machi
     - Then save it.
 
 7. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
-    ```text
+     ```bash
+    notepad ~/.ssh/config
+    ```
+   
     # Use the new key for GitHub
     Host github.com
     HostName github.com
