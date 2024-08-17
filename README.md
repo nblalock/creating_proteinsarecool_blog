@@ -29,15 +29,63 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 ### Step 3: Create repository on Github to maintain website
 1. Navigate to your Github profile
-2. Click on "repositories"
-3. Click on New to create a repository.
-4. Give the repository a name, description, and include a README file. The other settings depend on various things I am not an expert in so I would google about what license is best for what you want to do. I chose an MIT license (https://fossa.com/blog/open-source-licenses-101-mit-license/)
+2. Click on **repositories**
+3. Click on **New** to create a repository.
+4. Give the repository a name, description, and include a **README file**. The other settings depend on various things I am not an expert in so I would google about what license is best for what you want to do. I chose an MIT license (https://fossa.com/blog/open-source-licenses-101-mit-license/)
 
-### Step 4: Setup files for maintaining website on your local machine
+### Step 4a: Setup files for maintaining website on your local machine
 1. Open **Command Prompt** from the taskbar
 2. Navigate to your desktop to make it easy to see your files
    ```bash
    cd Desktop
    ```
-3.) 
+3. Create a file called public using command line (directions for creating a minimal website are adapted from https://tinyprojects.dev/guides/tiny_website)
+   ```bash
+   mkdir public
+   ```
+4. Navigate to the public file
+    ```bash
+   cd public
+   ```
+5. Optional: you may need to set up a way to access your github account. Step 4a below explains how to do this. Otherwise, skip this step.
+6. Clone your github repository to this file (to find this navigate to your github repository and click on the button **Code**)
+   ```bash
+   git clone git@github.com:nblalock/creating_proteinsarecool_blog.git
+
+### Step 4b: Set up ssh to access Github repository
+1. Generate new key
+    ```bash
+    ssh-keygen -t ed25519 -C "[your_email@example.com]" -f "/Users/nathanielblalock/.ssh/id_ed25519_new"
+    ```
+  
+2. Make sure SSH is running: 
+    ```bash
+    eval "$(ssh-agent -s)"
+    ```
+
+3. Add your new SSH key to the SSH agent: 
+    ```bash
+    ssh-add ~/.ssh/id_ed25519
+    ```
+
+4. Copy the new SSH public key to your clipboard: 
+    ```bash
+    pbcopy < ~/.ssh/id_ed25519.pub
+    ```
+
+5. Go to GitHub and navigate to Settings > SSH and GPG keys.
+
+6. Click on New SSH key to add the new key. 
+    - Give it a title and paste the key into the "Key" field. 
+    - Then save it.
+
+7. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
+    ```text
+    # Use the new key for GitHub
+    Host github.com
+    HostName github.com
+    User username@wisc.edu
+    IdentityFile ~/.ssh/id_ed25519_new
+    ```
+
 
