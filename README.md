@@ -42,16 +42,8 @@ I decided to create a blog to document thoughts from literature related to Machi
    ```bash
    cd Desktop
    ```
-3. Create a file called public using command line (directions for creating a minimal website are adapted from https://tinyprojects.dev/guides/tiny_website)
-   ```bash
-   mkdir public
-   ```
-4. Navigate to the public file
-    ```bash
-   cd public
-   ```
-5. Optional: You may need to set up a way to access your github account like using ssh. I explain how to do this below. If you already know about this and have this set up, skip to the next step.
-6. Clone your github repository to this file (to find this navigate to your github repository and click on the button **Code**)
+3. Optional: You may need to set up a way to access your github account like using ssh. I explain how to do this below. If you already know about this and have this set up, skip to the next step.
+4. Clone your github repository to this file (to find this navigate to your github repository and click on the button **Code**)
    ```bash
    git clone git@github.com:username/repository_name.git
    ```
@@ -102,4 +94,56 @@ I decided to create a blog to document thoughts from literature related to Machi
     IdentityFile C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
 
+#### Pushing Edits to GitHub
+
+1. **Navigate to the repository directory:**
+
+    ```bash
+    cd C:"\Users\YourUsername\repository_name"
+    ```
+
+2. **Check the status of your local repository:**
+
+    ```bash
+    git status
+    ```
+
+3. **Add your changes to the staging area:**
+
+    ```bash
+    git add .
+    ```
+
+    Use `.` to add all changed files, or specify the individual files.
+
+4. **Commit your changes:**
+
+    ```bash
+    git commit -m "Your commit message"
+    ```
+
+5. **Push the changes to GitHub:**
+
+    ```bash
+    git push origin main
+    ```
+    - Replace `main` with the branch you're working on, if different.
+
+---
+
+#### Pulling Updates from GitHub
+
+1. **Ensure you're in the repository directory:**
+
+    ```bash
+    cd RLXF_Projects
+    ```
+
+2. **Pull the latest changes:**
+
+    ```bash
+    git pull origin main
+    ```
+
+    Replace `main` with the branch you're working on, if different.
 
