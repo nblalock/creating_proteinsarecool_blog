@@ -59,7 +59,7 @@ I decided to create a blog to document thoughts from literature related to Machi
    ```
 3. Generate new key
     ```bash
-    ssh-keygen -t ed25519 -C "username@wisc.edu" -f "~/.ssh/id_ed25519"
+    ssh-keygen -t ed25519 -C "username@wisc.edu" -f C:"\Users\YourUsername\.ssh/id_ed25519"
     ```
   
 4. Make sure SSH is running: 
