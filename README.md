@@ -53,33 +53,37 @@ I decided to create a blog to document thoughts from literature related to Machi
    git clone git@github.com:nblalock/creating_proteinsarecool_blog.git
 
 ### Step 4b: Set up ssh to access Github repository
-1. Generate new key
+1. Start ssh agent
+   ```bash
+   start-ssh-agent.cmd
+   ```
+3. Generate new key
     ```bash
     ssh-keygen -t ed25519 -C "username@wisc.edu" -f "~/.ssh/id_ed25519"
     ```
   
-2. Make sure SSH is running: 
+4. Make sure SSH is running: 
     ```bash
     eval "$(ssh-agent -s)"
     ```
 
-3. Add your new SSH key to the SSH agent: 
+5. Add your new SSH key to the SSH agent: 
     ```bash
     ssh-add ~/.ssh/id_ed25519
     ```
 
-4. Copy the new SSH public key to your clipboard: 
+6. Copy the new SSH public key to your clipboard: 
     ```bash
     clip < ~/.ssh/id_ed25519.pub
     ```
 
-5. Go to GitHub and navigate to Settings > SSH and GPG keys.
+7. Go to GitHub and navigate to Settings > SSH and GPG keys.
 
-6. Click on New SSH key to add the new key. 
+8. Click on New SSH key to add the new key. 
     - Give it a title and paste the key into the "Key" field. 
     - Then save it.
 
-7. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
+9. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
      ```bash
     notepad ~/.ssh/config
     ```
