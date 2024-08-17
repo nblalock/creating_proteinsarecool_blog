@@ -10,6 +10,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 ## Step-by-Step Guide
 
+
 ### Step 1: Install VSCode
 1. Open the **Start Menu** and search for "Command Prompt."
 2. Right-click on **Command Prompt** and select "Pin to taskbar" for easy future access at the bottom of your desktop screen.
@@ -19,7 +20,8 @@ I decided to create a blog to document thoughts from literature related to Machi
    winget install Microsoft.VisualStudioCode
    ```
 6. Press enter to install
-*There are many text editors out there that would also work. I like Sublime the best, but I also have only used Sublime before...
+   - There are many text editors out there that would also work. I like Sublime the best, but I also have only used Sublime before...
+
 
 ### Step 2: Install Git on Windows machine
 1. Type the following command to install Git:
@@ -48,12 +50,15 @@ I decided to create a blog to document thoughts from literature related to Machi
     ```bash
    cd public
    ```
-5. Optional: you may need to set up a way to access your github account. Step 4a below explains how to do this. Otherwise, skip this step.
+5. Optional: You may need to set up a way to access your github account like using ssh. I explain how to do this below. If you already know about this and have this set up, skip to the next step.
 6. Clone your github repository to this file (to find this navigate to your github repository and click on the button **Code**)
    ```bash
-   git clone git@github.com:nblalock/creating_proteinsarecool_blog.git
+   git clone git@github.com:username/repository_name.git
+   ```
+   - You can check if your ReadMe file can not be seen in this file to make sure you cloned the repository.
 
-### Step 4b: Set up ssh to access Github repository
+
+### Setting up ssh to clone Github repository: Set up ssh to access Github repository
 1. Start ssh agent
    ```bash
    start-ssh-agent.cmd
@@ -96,7 +101,5 @@ I decided to create a blog to document thoughts from literature related to Machi
     User username@wisc.edu
     IdentityFile C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
-
-  1. 
 
 
