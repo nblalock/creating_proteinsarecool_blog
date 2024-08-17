@@ -59,31 +59,28 @@ I decided to create a blog to document thoughts from literature related to Machi
    ```
 3. Generate new key
     ```bash
-    ssh-keygen -t ed25519 -C "username@wisc.edu" -f C:"\Users\YourUsername\.ssh/id_ed25519"
+    ssh-keygen -t ed25519 -C "username@wisc.edu" -f C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
-  
-4. Make sure SSH is running: 
-    ```bash
-    eval "$(ssh-agent -s)"
-    ```
+    You will then be asked to set up a passphrase
+    Verify passphrase by entering it again
 
-5. Add your new SSH key to the SSH agent: 
+4. Add your new SSH key to the SSH agent: 
     ```bash
     ssh-add ~/.ssh/id_ed25519
     ```
 
-6. Copy the new SSH public key to your clipboard: 
+5. Copy the new SSH public key to your clipboard: 
     ```bash
     clip < ~/.ssh/id_ed25519.pub
     ```
 
-7. Go to GitHub and navigate to Settings > SSH and GPG keys.
+6. Go to GitHub and navigate to Settings > SSH and GPG keys.
 
-8. Click on New SSH key to add the new key. 
+7. Click on New SSH key to add the new key. 
     - Give it a title and paste the key into the "Key" field. 
     - Then save it.
 
-9. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
+8. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
      ```bash
     notepad ~/.ssh/config
     ```
