@@ -55,7 +55,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 ### Step 4b: Set up ssh to access Github repository
 1. Generate new key
     ```bash
-    ssh-keygen -t ed25519 -C "[your_email@example.com]" -f "/Users/nathanielblalock/.ssh/id_ed25519_new"
+    ssh-keygen -t ed25519 -C "[your_email@example.com]" -f "/Users/nathanielblalock/.ssh/id_ed25519"
     ```
   
 2. Make sure SSH is running: 
@@ -85,7 +85,7 @@ I decided to create a blog to document thoughts from literature related to Machi
     Host github.com
     HostName github.com
     User username@wisc.edu
-    IdentityFile ~/.ssh/id_ed25519_new
+    IdentityFile ~/.ssh/id_ed25519
     ```
 
 
