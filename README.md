@@ -31,7 +31,8 @@ I decided to create a blog to document thoughts from literature related to Machi
 1. Navigate to your Github profile
 2. Click on **repositories**
 3. Click on **New** to create a repository.
-4. Give the repository a name, description, and include a **README file**. The other settings depend on various things I am not an expert in so I would google about what license is best for what you want to do. I chose an MIT license (https://fossa.com/blog/open-source-licenses-101-mit-license/)
+4. Give the repository a name, description, and include a **README file**. The other settings depend on various things I am not an expert in so I would google about what license is best
+   for what you want to do. I chose an MIT license (https://fossa.com/blog/open-source-licenses-101-mit-license/)
 
 ### Step 4a: Setup files for maintaining website on your local machine
 1. Open **Command Prompt** from the taskbar
@@ -61,26 +62,28 @@ I decided to create a blog to document thoughts from literature related to Machi
     ```bash
     ssh-keygen -t ed25519 -C "username@wisc.edu" -f C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
-    You will then be asked to set up a passphrase
-    Verify passphrase by entering it again
+    - You will then be asked to set up a passphrase
+    - Verify passphrase by entering it again
 
-4. Add your new SSH key to the SSH agent: 
+3. Make sure ssh is running with your new key (assuming this is your first key, you may need to use ssh-add with a id_ed25519_new if you have made keys before in the past)
+   ```bash
+   start-ssh-agent.cmd
+   ```
+   You will be asked to enter your passphrase
+
+4. Copy the new SSH public key to your clipboard: 
     ```bash
-    ssh-add C:"\Users\YourUsername\.ssh\id_ed25519"
+    type C:"\Users\YourUsername\.ssh\id_ed25519.pub" | clip
     ```
 
-5. Copy the new SSH public key to your clipboard: 
-    ```bash
-    type C:\Users\YourUsername\.ssh\id_ed25519_new.pub | clip
-    ```
+8. Go to GitHub and navigate to **Settings** > **SSH and GPG keys**.
 
-6. Go to GitHub and navigate to Settings > SSH and GPG keys.
+9. Click on New SSH key to add the new key. 
+    - Give it a title
+    - Paste the key into the "Key" field. 
+    - Save it.
 
-7. Click on New SSH key to add the new key. 
-    - Give it a title and paste the key into the "Key" field. 
-    - Then save it.
-
-8. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
+10. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
      ```bash
     notepad C:"\Users\YourUsername\.ssh\config"
     ```
