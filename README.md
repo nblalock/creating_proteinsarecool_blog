@@ -66,12 +66,12 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 4. Add your new SSH key to the SSH agent: 
     ```bash
-    ssh-add ~/.ssh/id_ed25519
+    ssh-add C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
 
 5. Copy the new SSH public key to your clipboard: 
     ```bash
-    clip < ~/.ssh/id_ed25519.pub
+    type C:\Users\YourUsername\.ssh\id_ed25519_new.pub | clip
     ```
 
 6. Go to GitHub and navigate to Settings > SSH and GPG keys.
@@ -82,14 +82,14 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 8. Configure SSH to use the correct SSH key by editing the `.ssh/config` file to include:
      ```bash
-    notepad ~/.ssh/config
+    notepad C:"\Users\YourUsername\.ssh\config"
     ```
    
     # Use the new key for GitHub
     Host github.com
     HostName github.com
     User username@wisc.edu
-    IdentityFile ~/.ssh/id_ed25519
+    IdentityFile C:\Users\YourUsername\.ssh\id_ed25519
     ```
 
 
