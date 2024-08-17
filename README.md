@@ -1,4 +1,4 @@
-# Creating ProteinsAreCool.com from scratch
+# Creating static website from scratch for blog about protein engineering
 
 I decided to create a blog to document thoughts from literature related to Machine Learning for Protein Engineering, collaborate with other protein engineers, and learn new programming languages. As an additional challenge, I decided to use a Windows machine rather than my typical Mac.
 
