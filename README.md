@@ -86,7 +86,7 @@ I decided to create a blog to document thoughts from literature related to Machi
     ```
      - You may need to press okay about an error. Continue with notepad to make sure the configuration to use your ssh and key to clone your github repository
    
-    # Use the new key for GitHub
+    #### Use the new key for GitHub
     ```
     Host github.com
     HostName github.com
@@ -94,7 +94,7 @@ I decided to create a blog to document thoughts from literature related to Machi
     IdentityFile C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
 
-#### Pushing Edits to GitHub
+### Pushing Edits to GitHub
 
 1. **Navigate to the repository directory:**
 
@@ -131,12 +131,12 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 ---
 
-#### Pulling Updates from GitHub
+### Pulling Updates from GitHub
 
 1. **Ensure you're in the repository directory:**
 
     ```bash
-    cd RLXF_Projects
+    cd repository_name
     ```
 
 2. **Pull the latest changes:**
@@ -146,4 +146,17 @@ I decided to create a blog to document thoughts from literature related to Machi
     ```
 
     Replace `main` with the branch you're working on, if different.
+
+### Creating minimal static website (adapted from website and youtube video)
+
+1. Oopen VSCode
+
+2. Type
+```
+<h1>Website Name</h1>
+```
+
+3. Save as index.html (html file)
+
+4. 
 
