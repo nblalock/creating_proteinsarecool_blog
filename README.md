@@ -8,8 +8,9 @@ I decided to create a blog to document thoughts from literature related to Machi
 3. Learn and apply new programming languages like Markdown, html, CSS, and Javascript.
 4. Learn to use a Windows environment.
 
-## Step-by-Step Guide
+---
 
+## Step-by-Step Guide
 
 ### Step 1: Install VSCode
 1. Open the **Start Menu** and search for "Command Prompt."
@@ -21,7 +22,6 @@ I decided to create a blog to document thoughts from literature related to Machi
    ```
 6. Press enter to install
    - There are many text editors out there that would also work. I like Sublime the best, but I also have only used Sublime before...
-
 
 ### Step 2: Install Git on Windows machine
 1. Type the following command to install Git:
@@ -49,6 +49,7 @@ I decided to create a blog to document thoughts from literature related to Machi
    ```
    - You can check if your ReadMe file can not be seen in this file to make sure you cloned the repository.
 
+---
 
 ### Setting up ssh to clone Github repository: Set up ssh to access Github repository
 1. Start ssh agent
@@ -94,6 +95,8 @@ I decided to create a blog to document thoughts from literature related to Machi
     IdentityFile C:"\Users\YourUsername\.ssh\id_ed25519"
     ```
 
+---
+
 ### Pushing Edits to GitHub
 
 1. **Navigate to the repository directory:**
@@ -129,8 +132,6 @@ I decided to create a blog to document thoughts from literature related to Machi
     ```
     - Replace `main` with the branch you're working on, if different.
 
----
-
 ### Pulling Updates from GitHub
 
 1. **Ensure you're in the repository directory:**
@@ -147,6 +148,8 @@ I decided to create a blog to document thoughts from literature related to Machi
 
     Replace `main` with the branch you're working on, if different.
 
+---
+
 ### Creating minimal static website (adapted from website and youtube video)
 
 1. Oopen VSCode
@@ -158,5 +161,17 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 3. Save as index.html (html file)
 
-4. 
+4. Push your edits to your repository to Github now
+
+5. Navigate to your Github repository online
+
+6. Go to **setttings**
+
+7. Go to **pages**
+
+8. Below **Branch** select None and change this to main
+
+9. Click Save
+
+10. 
 
