@@ -150,7 +150,7 @@ I decided to create a blog to document thoughts from literature related to Machi
 
 ---
 
-### Creating minimal static website (adapted from website and youtube video)
+### Creating minimal static website (adapted from [website](https://tinyprojects.dev/guides/tiny_website) and [youtube video](https://www.youtube.com/watch?v=QJdiEyeJzC4))
 
 1. Oopen VSCode
 
