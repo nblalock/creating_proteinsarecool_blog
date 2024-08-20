@@ -1,0 +1,12 @@
+/* Apply background image to the entire body of the home page */
+body {
+    background-image: url('images/Novolog_insulin_desktop_background_v4.png'); /* Path to the image */
+    background-size: cover; /* Ensure the image covers the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-attachment: fixed; /* Keep the background image fixed when scrolling */
+    background-position: center; /* Center the background image */
+    color: #fff; /* Optional: Set text color to white for better contrast */
+    font-family: Arial, sans-serif; /* Ensure text is readable */
+    margin: 0;
+    padding: 0;
+}
